@@ -1,9 +1,11 @@
 
 from django.contrib import admin
 from django.contrib.auth import logout
-from django.urls import path
+from django.urls import path,
 from authentication.views import login,signup,logout
 from urlhandler.views import dashboard,generate,home,deleteurl
+
+
 urlpatterns = [
     
     path('admin/', admin.site.urls),
