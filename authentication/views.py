@@ -52,7 +52,7 @@ def signup(request):
                             password=request.POST['password'],
                         )
                         messages.success(
-                            request, "Signup Successful <br> Login Here")
+                            request, "Signup Successful  Login Here")
                         return redirect(login)
                 else:
                     return render(request, 'signup.html', {'error': "Empty Fields"})
